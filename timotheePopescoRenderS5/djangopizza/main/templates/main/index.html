@@ -1,0 +1,17 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DjangoPizza</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <div class="center">
+        <img class="small-logo" src="{% static 'main/images/main_logo.png' %}">
+        <br><br><a href="{% url 'menu:index' %}">Click to see the menu</a>
+    </div>
+
+
+</body>
+</html>

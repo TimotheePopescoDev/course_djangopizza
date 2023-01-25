@@ -1,0 +1,32 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DjangoPizza - Menu</title>
+    <link rel="stylesheet" href="{% static 'menu/style.css' %}">
+</head>
+<body>
+    <a href="{% url 'main:index' %}"><img class="small-logo" src="{% static 'menu/images/small_logo.png' %}"></a>
+
+
+    <div class="menu-title">
+        <h1>Our Pizzas</h1>
+    </div>
+
+
+    <section class="main-pizzas">
+        {% for pizza in pizzas %}
+            <div class="main-pizza">
+                <span class="pizza-title">{{ pizza.name }} </span>
+                <span class="pizza-price"> {{ pizza.price | floatformat:2 }} €</span>
+                <span class="pizza-ingredients">{{ pizza.ingredients }}</span>
+                {% if pizza.vegetarian %}
+                    <span class="pizza-vegetarian">VEGETARIAN</span>
+                {% endif %}
+            </div>
+
+        {% endfor %}
+    </section>
+</body>
+</html>

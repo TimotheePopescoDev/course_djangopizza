@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: Arial;
+    color: white;
+    background: url("images/main_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.center a {
+    color: white;
+}
+.center a:hover {
+    color: orange;
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-family: Arial;
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/menu_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.small-logo{
+    margin-top: 25px;
+    margin-left: 35px;
+}
+h1{
+    background-color: #DD7831;
+    display: inline;
+    padding: 2vh 3%;
+}
+.menu-title{
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+}
+.main-pizzas{
+    margin-left: 5%;
+}
+.main-pizza{
+    padding: 3vh 1%;
+}
+.pizza-title{
+    font-size: 2rem;
+    font-weight: bold;
+    display:inline-block;
+    width:25%;
+}
+.pizza-price{
+    font-size:2rem;
+    color: #DD7831;
+    display:inline-block;
+    width: 15%;
+    text-align: right;
+}
+.pizza-ingredients{
+    font-size:1rem;
+    color: #C8C8C8;
+    display:block;
+    margin-top:4px;
+    max-width: 30%
+}
+.pizza-vegetarian{
+    background-color: #DD7831;
+    color: black;
+    font-size: 0.75rem;
+    margin-top:1vh;
+    padding: 0.5vh 1%;
+    border-radius: 25px;
+    display:inline-block;
+    font-weight:bold;
+}
